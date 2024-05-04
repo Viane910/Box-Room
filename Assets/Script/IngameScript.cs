@@ -5,6 +5,7 @@ using UnityEngine;
 public class IngameScript : MonoBehaviour
 {
     public GameObject storyPopup;
+    public KeyCode popupKey = KeyCode.Q;
 
     // Start is called before the first frame update
     void Start()
@@ -15,11 +16,17 @@ public class IngameScript : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        
+        if (Input.GetKeyDown(popupKey))
+        {
+            TogglePopup();
+        }
     }
 
-    public void TogglePopup()
+    void TogglePopup()
     {
-        storyPopup.SetActive(!storyPopup.activeSelf);
+        if (storyPopup != null)
+        {
+            storyPopup.SetActive(!storyPopup.activeSelf);
+        }
     }
 }
