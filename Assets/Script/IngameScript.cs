@@ -10,7 +10,7 @@ public class IngameScript : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        storyPopup.SetActive(false);
+        storyPopup.SetActive(true);
     }
 
     // Update is called once per frame
