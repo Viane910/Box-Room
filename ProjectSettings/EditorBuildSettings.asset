@@ -9,6 +9,12 @@ EditorBuildSettings:
     path: Assets/Scenes/MainMenu.unity
     guid: c3604a98cce469e45ac43f488c35595c
   - enabled: 1
+    path: Assets/Scenes/Prolog.unity
+    guid: 07e35bbf37246f845bbe4c47c9b7a951
+  - enabled: 1
     path: Assets/Scenes/SampleScene.unity
     guid: 2cda990e2423bbf4892e6590ba056729
+  - enabled: 1
+    path: Assets/Scenes/FinalScene.unity
+    guid: 37e45c52aafad7f44863c010b314c6cc
   m_configObjects: {}
