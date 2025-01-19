@@ -17,4 +17,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/FinalScene.unity
     guid: 37e45c52aafad7f44863c010b314c6cc
+  - enabled: 1
+    path: Assets/Scenes/Epilog.unity
+    guid: 435262b3972b9494ea1f4a1a667a0c76
   m_configObjects: {}

@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using TMPro;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 
 public class ActorSO : MonoBehaviour
 {
@@ -78,11 +79,7 @@ public class ActorSO : MonoBehaviour
 
     private void EndDialogue()
     {
-        // Nonaktifkan UI dialog dan reset variabel
-        dialogueUI.SetActive(false);
-        dialogueActivated = false;
-        Destroy(dialogueUI);
-        McZoomUI.SetActive(true);
+        SceneManager.LoadScene("Epilog");
     }
 
 }
