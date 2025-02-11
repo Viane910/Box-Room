@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using System.Linq;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 using UnityEngine.UI;
@@ -8,7 +9,7 @@ public class TextInput : MonoBehaviour
 {
     public GameObject popupPanel;
     public InputField inputField;
-    public string keyword = "RINAL"; // Keyword to open the pop-up
+    public string[] keyword; // Keyword to open the pop-up
 
     // Called when another collider enters the trigger
     void OnTriggerEnter(Collider other)
@@ -30,10 +31,11 @@ public class TextInput : MonoBehaviour
     // Call this function to check if input text is correct
     public void CheckInputText()
     {
-        if (inputField.text == keyword)
+        if (keyword.Contains(inputField.text))
         {
             SceneManager.LoadScene("FinalScene");
             ClosePopup();
+            Time.timeScale = 1;
         }
         else
         {
